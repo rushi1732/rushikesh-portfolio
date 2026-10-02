@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rushikesh Tawade | AI Content Creator &amp; Full Stack Web Developer</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Rushikesh Tawade — AI Content Creator, AI Video Producer, and Full Stack Web Developer. Crafting cinematic AI videos, high-converting websites, and modern digital experiences.">
+  <meta name="keywords" content="Rushikesh Tawade, AI Content Creator, AI Video Creator, Full Stack Developer, Web Developer, React, Next.js, Node.js, Video Production, Portfolio">
+  <meta name="author" content="Rushikesh Tawade">
+  <meta name="theme-color" content="#060913">
+  <meta name="color-scheme" content="dark">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rushikesh Tawade | AI Content Creator &amp; Web Developer">
+  <meta property="og:description" content="Crafting cinematic AI-powered videos, high-converting websites, and digital experiences using cutting-edge AI tools and web engineering.">
+  <meta property="og:image" content="assets/logo.png">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rushikesh Tawade | AI Content Creator &amp; Web Developer">
+  <meta name="twitter:description" content="Explore client services, AI video production, tech stack, and career journey.">
+  <meta name="twitter:image" content="assets/logo.png">
+  
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo.png">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- Ambient Glow & Grid Backgrounds -->
+  <div class="bg-grid-overlay"></div>
+  <div class="bg-ambient-orb orb-1"></div>
+  <div class="bg-ambient-orb orb-2"></div>
+  <div class="bg-ambient-orb orb-3"></div>
+  <canvas id="hero-canvas" class="bg-mesh-canvas" aria-hidden="true"></canvas>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="main-header">
+    <div class="container navbar-inner">
+      <a href="#home" class="brand-logo" aria-label="Rushikesh Tawade Homepage">
+        <img src="assets/logo.png" alt="Rushikesh Tawade RT Logo" class="brand-logo-img" width="38" height="38">
+        <span class="brand-text">Rushikesh<span class="brand-tag">.dev</span></span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Let's Talk</span>
+        </a>
+        <button class="hamburger-btn" id="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">About Me</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#skills" class="nav-link">Skills & Stack</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <div style="margin-top: 10px; display: flex; gap: 10px;">
+      <a href="#contact" class="btn btn-primary btn-sm drawer-link" style="width: 100%;">Book a Project</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          
+          <!-- Creator Avatar & Status Badge -->
+          <div class="hero-creator-pill" id="hero-status-pill">
+            <div class="hero-pill-avatar">
+              <img src="assets/avatar.jpg" alt="Rushikesh Tawade" class="hero-mini-photo">
+              <span class="pulse-dot"></span>
+            </div>
+            <div class="hero-pill-info">
+              <span class="hero-pill-name">Rushikesh Tawade</span>
+              <span class="hero-pill-sep">·</span>
+              <span class="hero-pill-status">Available for Client Projects</span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="name-highlight" id="hero-name">Rushikesh Tawade</span>
+          </h1>
+
+          <div class="hero-typing-wrap">
+            <span id="typed-role-text">AI Content Creator</span><span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-tagline" id="hero-tagline">
+            I create AI-powered videos, modern websites and digital experiences using the latest AI tools.
+          </p>
+
+          <!-- Aligned Interaction Bar -->
+          <div class="hero-interaction-bar">
+            <div class="hero-actions">
+              <a href="#services" class="btn btn-primary">
+                <span>Explore Services</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span>Get In Touch</span>
+              </a>
+            </div>
+
+            <div class="hero-bar-divider" aria-hidden="true"></div>
+
+            <div class="social-links" id="hero-social-links">
+              <!-- Populated dynamically via app.js -->
+            </div>
+          </div>
+
+          <!-- Hero Stats Cards -->
+          <div class="hero-stats" id="hero-stats-grid">
+            <!-- Populated dynamically via app.js -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <span>About Me</span>
+          </div>
+          <h2 class="section-title">Fusing Generative AI with <span class="text-gradient">Modern Web Craft</span></h2>
+          <p class="section-subtitle">A glimpse into my creative background, core philosophy, and how I harness advanced AI tools to build high-impact digital experiences.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Photo Profile Card (Left Column) -->
+          <div class="about-photo-wrapper">
+            <div class="photo-card">
+              <div class="photo-card-inner">
+                <img id="about-avatar-img" src="assets/avatar.jpg" alt="Rushikesh Tawade Portrait" loading="lazy">
+              </div>
+              <div class="photo-badge-floating">
+                <div class="photo-badge-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                </div>
+                <div class="photo-badge-text">
+                  <h5>AI & Web Creator</h5>
+                  <p>AI Video · High-Converting Websites</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Metadata Card -->
+            <div class="photo-meta-card">
+              <div class="meta-item">
+                <span class="meta-label">Location</span>
+                <span class="meta-val">Mumbai / Pune, India</span>
+              </div>
+              <div class="meta-divider"></div>
+              <div class="meta-item">
+                <span class="meta-label">Availability</span>
+                <span class="meta-val highlight-green">Open for Work</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Details & Story (Right Column) -->
+          <div class="about-text">
+            <div class="about-lead-tag">// Creative Technologist & Digital Creator</div>
+            <h3 class="about-headline">Bridging cinematic AI video production with high-converting web engineering.</h3>
+            
+            <div id="about-bio-text" class="about-bio-container">
+              <!-- Dynamically populated via app.js -->
+            </div>
+
+            <div class="about-interests-wrap">
+              <span class="interests-label">// Primary Focus Areas</span>
+              <div class="interest-chips" id="about-interests-chips">
+                <!-- Dynamically populated via app.js -->
+              </div>
+            </div>
+
+            <div class="about-mission-box">
+              <div class="mission-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <span class="interests-label" style="margin-bottom: 0;">Career Mission</span>
+              </div>
+              <p id="about-career-goal" class="mission-text"></p>
+            </div>
+
+            <div class="about-cta-row">
+              <a href="#services" class="btn btn-outline btn-sm">
+                <span>View All Services</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <a href="#contact" class="btn btn-primary btn-sm">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span>Let's Collaborate</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2.5 DEDICATED SERVICES SECTION -->
+    <section id="services" class="section-padding" style="background: rgba(11, 17, 32, 0.5);">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>Turnkey Creator & Dev Services</span>
+          </div>
+          <h2 class="section-title">AI Video, Content & <span class="text-gradient">Web Solutions</span></h2>
+          <p class="section-subtitle">Comprehensive digital solutions combining modern AI generation with custom web engineering to help brands stand out.</p>
+        </div>
+
+        <div class="services-grid" id="services-grid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section id="skills" class="section-padding" style="background: rgba(11, 17, 32, 0.4);">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>Technical Skills</span>
+          </div>
+          <h2 class="section-title">Comprehensive <span class="text-gradient">Tech Stack</span></h2>
+          <p class="section-subtitle">Battle-tested tools and frameworks I leverage to design, construct, and scale modern web applications.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-nav-tabs" id="skills-filter-nav">
+          <button class="skill-tab-btn active" data-skill-cat="all">All Disciplines</button>
+          <button class="skill-tab-btn" data-skill-cat="ai-tools">AI &amp; Creative Tools</button>
+          <button class="skill-tab-btn" data-skill-cat="web-dev-skills">Web Development</button>
+          <button class="skill-tab-btn" data-skill-cat="content-strategy">Content &amp; Video</button>
+          <button class="skill-tab-btn" data-skill-cat="backend-cloud">Backend &amp; Cloud</button>
+        </div>
+
+        <div class="skills-grid-container" id="skills-container-grid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. EXPERIENCE / INTERNSHIP SECTION -->
+    <section id="experience" class="section-padding" style="background: rgba(11, 17, 32, 0.4);">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <span>Career Journey</span>
+          </div>
+          <h2 class="section-title">Work Experience & <span class="text-gradient">Career Journey</span></h2>
+          <p class="section-subtitle">Track record of professional leadership, technical AutoCAD design, project coordination, and AI & web creation.</p>
+        </div>
+
+        <div class="timeline-container" id="experience-timeline">
+          
+          <!-- Item 1: Studio Apex / AI Creative Producer -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-header-info">
+                  <h4 class="role-title">AI Creative Producer &amp; Lead Web Developer</h4>
+                  <div class="company-name">Studio Apex / Independent Consultant · Remote · Global Clients</div>
+                </div>
+                <div class="timeline-duration-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                  <span>2025 — Present</span>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <p>Spearheading AI video creation, viral digital campaigns, and custom high-converting web applications for creator brands, SaaS startups, and corporate clients.</p>
+                <ul class="timeline-achievements">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Produced 80+ AI video commercials and promotional campaigns utilizing Runway Gen-3, Kling, and ElevenLabs.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Designed and shipped 15+ bespoke portfolio and business websites with 98+ Google Lighthouse performance scores.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Automated AI content production workflows, cutting client content turnaround times by over 65%.</span>
+                  </li>
+                </ul>
+                <div class="project-tech-tags" style="border: none; padding: 0; margin-bottom: 0;">
+                  <span class="tech-tag">AI Video</span>
+                  <span class="tech-tag">Runway Gen-3</span>
+                  <span class="tech-tag">Midjourney</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Premiere Pro</span>
+                  <span class="tech-tag">Claude API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Bharat Fire Protection -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-header-info">
+                  <h4 class="role-title">Site Supervisor | AutoCAD Designer | Assistant to Project Manager</h4>
+                  <div class="company-name">Bharat Fire Protection · Mumbai, India</div>
+                </div>
+                <div class="timeline-duration-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                  <span>Dec 2022 — Dec 2024</span>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <p>Executed detailed AutoCAD engineering drawings for specialized firefighting systems, prepared Bills of Quantities (BOQs), and assisted project management with site coordination and billing abstracts.</p>
+                <ul class="timeline-achievements">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Prepared detailed AutoCAD drawings for firefighting systems, including plans, sections and elevations based on tender drawings and project requirements.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Interpreted technical specifications and engineering drawings to prepare accurate and compliant firefighting system designs.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Prepared Bills of Quantities (BOQs) for project estimation, material planning and cost-related requirements.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Prepared billing abstracts and maintained accurate billing and transaction records for multiple clients.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Monitored project progress and coordinated with site teams, project staff and other stakeholders.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Managed documentation and client account information across multiple projects.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Assisted the Project Manager with project coordination, documentation and day-to-day project activities.</span>
+                  </li>
+                </ul>
+                <div class="project-tech-tags" style="border: none; padding: 0; margin-bottom: 0;">
+                  <span class="tech-tag">AutoCAD</span>
+                  <span class="tech-tag">Site Supervision</span>
+                  <span class="tech-tag">Firefighting Systems</span>
+                  <span class="tech-tag">BOQ Estimation</span>
+                  <span class="tech-tag">Project Coordination</span>
+                  <span class="tech-tag">Billing Abstracts</span>
+                  <span class="tech-tag">Client Management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: M/S Abhinav Enterprises -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-header-info">
+                  <h4 class="role-title">Office Assistant</h4>
+                  <div class="company-name">M/S Abhinav Enterprises · Ratnagiri, Maharashtra, India</div>
+                </div>
+                <div class="timeline-duration-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                  <span>Dec 2020 — May 2022</span>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <p>Managed enterprise administration, employee records, payroll disbursements, and institutional financial coordination for a civil construction firm.</p>
+                <ul class="timeline-achievements">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Managed and maintained company, employee and administrative records for a civil construction business.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Handled routine office administration, documentation and computer-based work.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Prepared and processed worker salaries while maintaining accurate payroll records.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Assisted with banking operations and financial documentation.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Coordinated with financial institutions when required and maintained transaction-related records.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Supported management with administrative and financial activities to ensure smooth day-to-day operations.</span>
+                  </li>
+                </ul>
+                <div class="project-tech-tags" style="border: none; padding: 0; margin-bottom: 0;">
+                  <span class="tech-tag">Office Administration</span>
+                  <span class="tech-tag">Payroll Processing</span>
+                  <span class="tech-tag">Banking Operations</span>
+                  <span class="tech-tag">Documentation</span>
+                  <span class="tech-tag">Financial Record Keeping</span>
+                  <span class="tech-tag">Civil Construction Records</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. EDUCATION & 7. CERTIFICATIONS SECTION -->
+    <section id="education" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/></svg>
+            <span>Credentials</span>
+          </div>
+          <h2 class="section-title">Education & <span class="text-gradient">Certifications</span></h2>
+          <p class="section-subtitle">Academic foundations and verified professional industry certifications.</p>
+        </div>
+
+        <!-- Split Grid: Education & Certifications -->
+        <div style="margin-bottom: 50px;">
+          <h3 style="font-size: 1.4rem; margin-bottom: 24px; color: var(--primary-light); display: flex; align-items: center; gap: 10px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            Academic Education
+          </h3>
+          <div class="split-cards-grid" id="education-grid">
+            <div class="edu-cert-card">
+              <div class="edu-cert-top">
+                <div class="edu-cert-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                </div>
+                <span class="edu-cert-badge">Graduated (2025)</span>
+              </div>
+              <h4>Bachelor of Commerce (B.Com)</h4>
+              <div class="edu-cert-org">University of Mumbai</div>
+              <div class="edu-cert-meta">
+                <span>2025</span>
+                <span>•</span>
+                <span>Mumbai, Maharashtra, India</span>
+              </div>
+              <p>Comprehensive foundation in commercial accounting, business management, economics, and corporate financial principles.</p>
+              <ul class="project-highlights-list" style="margin-bottom: 0;">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg> <span>Degree conferred by the prestigious University of Mumbai</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg> <span>Applied commercial, project accounting, and business administration expertise</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.4rem; margin-bottom: 24px; color: var(--secondary-light); display: flex; align-items: center; gap: 10px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            Verified Certifications
+          </h3>
+          <div class="split-cards-grid" id="certifications-grid">
+            <div class="edu-cert-card">
+              <div class="edu-cert-top">
+                <div class="edu-cert-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                </div>
+                <span class="edu-cert-badge">AI &amp; Media</span>
+              </div>
+              <h4>Generative AI Creative Workflows &amp; Video Production</h4>
+              <div class="edu-cert-org">AI Media Guild / DeepLearning.AI</div>
+              <div class="edu-cert-meta">
+                <span>Issued 2024</span>
+                <span>•</span>
+                <span>Credential: AI-CREATIVE-99281</span>
+              </div>
+              <div style="margin-top: 16px;">
+                <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <span>Verify Credential</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="edu-cert-card">
+              <div class="edu-cert-top">
+                <div class="edu-cert-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                </div>
+                <span class="edu-cert-badge">Frontend &amp; UI</span>
+              </div>
+              <h4>Meta Front-End Developer Professional Certificate</h4>
+              <div class="edu-cert-org">Meta / Coursera</div>
+              <div class="edu-cert-meta">
+                <span>Issued 2023</span>
+                <span>•</span>
+                <span>Credential: META-FED-993821</span>
+              </div>
+              <div style="margin-top: 16px;">
+                <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <span>Verify Credential</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="edu-cert-card">
+              <div class="edu-cert-top">
+                <div class="edu-cert-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                </div>
+                <span class="edu-cert-badge">Cloud Architecture</span>
+              </div>
+              <h4>AWS Certified Solutions Architect — Associate</h4>
+              <div class="edu-cert-org">Amazon Web Services (AWS)</div>
+              <div class="edu-cert-meta">
+                <span>Issued 2023 · Valid 2026</span>
+                <span>•</span>
+                <span>ID: AWS-SAA-8849204</span>
+              </div>
+              <div style="margin-top: 16px;">
+                <a href="https://aws.amazon.com/verification" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <span>Verify Credential</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. CONTACT SECTION -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Let's Start a <span class="text-gradient">Conversation</span></h2>
+          <p class="section-subtitle">Have a project inquiry, job opportunity, or technical question? Send a note or reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Direct Channels -->
+          <div class="contact-info-panel">
+            <div id="contact-channels-list">
+              <!-- Populated dynamically via app.js -->
+            </div>
+          </div>
+
+          <!-- Modern Form -->
+          <div class="contact-form-card">
+            <form id="contact-form" novalidate>
+              <div class="form-group-row">
+                <div class="form-field">
+                  <label for="form-name">Your Full Name *</label>
+                  <input type="text" id="form-name" placeholder="John Doe" autocomplete="name" required aria-required="true" aria-describedby="name-error">
+                  <span class="error-msg" id="name-error" role="alert">Name is required</span>
+                </div>
+                <div class="form-field">
+                  <label for="form-email">Email Address *</label>
+                  <input type="email" id="form-email" placeholder="john@example.com" autocomplete="email" required aria-required="true" aria-describedby="email-error">
+                  <span class="error-msg" id="email-error" role="alert">Valid email is required</span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="form-subject">Subject *</label>
+                <input type="text" id="form-subject" placeholder="Project Inquiry / Job Opportunity" required aria-required="true" aria-describedby="subject-error">
+                <span class="error-msg" id="subject-error" role="alert">Subject is required</span>
+              </div>
+
+              <div class="form-field">
+                <label for="form-message">
+                  <span>Message *</span>
+                  <span class="char-counter" id="msg-char-count">0 / 1000</span>
+                </label>
+                <textarea id="form-message" maxlength="1000" placeholder="Describe your project, timeline, or opportunity..." required aria-required="true" aria-describedby="message-error"></textarea>
+                <span class="error-msg" id="message-error" role="alert">Message must be at least 10 characters</span>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary" style="width: 100%; padding: 14px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 10. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-info">
+          <div class="footer-brand-header">
+            <img src="assets/logo.png" alt="Rushikesh Tawade RT Logo" class="footer-logo-img" width="38" height="38">
+            <h4>Rushikesh Tawade</h4>
+          </div>
+          <p>Full Stack Developer specializing in high-performance web applications, cloud backends, and intuitive user experiences.</p>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/rushikeshtawade" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rushikesh-tawade-564bb2232" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:tawaderushi173@gmail.com" class="social-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <ul class="footer-links" aria-label="Footer Navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Rushikesh Tawade. Designed & Built with modern web standards.</p>
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top of page" style="opacity: 0; pointer-events: none;">
+          <span>Back to top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js?v=2.3"></script>
+  <script src="js/app.js?v=2.3"></script>
+</body>
+</html>
